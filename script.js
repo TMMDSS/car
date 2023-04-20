@@ -26,3 +26,12 @@ btnClose.addEventListener('click', function() {
         alert(i)
     })
 }*/
+
+/*AQUI COMEÇA O SCRIPT DO BTN BARRA LATERAL*/
+const btn = document.getElementById('btnMenu')
+
+function animar() {
+    btn.classList.toggle('ativar')
+}
+
+btn.addEventListener('click', animar) 
