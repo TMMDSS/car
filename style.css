@@ -108,12 +108,24 @@ header #navegação {
 
 #bioFoto {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: linear-gradient(to top, var(--cor-2), var(--cor-0));
     height: 500px;
     width: 100%;
     padding: 25px;
+}
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    height: 300px;
+    width: 500px;
+    text-align: center;
 }
 
 
