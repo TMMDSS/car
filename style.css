@@ -11,9 +11,11 @@
     --cor-1: #fdcdba;
     --cor-2: #BD4613;
     --cor-3: #8A330E;
-
 }
 
+body {
+    background-color: var(--cor-3);
+}
 
 main {
     min-width: 500px;
@@ -24,6 +26,57 @@ main {
 header {
     position: sticky;
     top: 0;
+}
+
+#btnClose {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    color: white;
+    background-color: black;
+    font-size: 3em;
+    padding: 15px 25px;
+    transition: all ease-in-out .1s;
+}
+
+#btnClose:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: black;
+    transform: scale(1.1);
+}
+
+#modalImg {
+    width: 65vw;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+
+.modalActive #modalImg {
+    transform: scale(1);
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    visibility: hidden;
+    z-index: 1;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.5s linear;
+}
+
+.modalContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.modalActive {
+    visibility: visible;
+    opacity: 1;
 }
 
 #mainHeader {
@@ -63,17 +116,9 @@ header #navegação {
     padding: 25px;
 }
 
-#bio {
-
-    width: 40%;
-}
-
-#foto {
-    width: 60%;
-}
 
 #foto img {
-    width: 100%;
+    width: 750px;
 }
 
 
@@ -108,20 +153,22 @@ header #navegação {
     background: url(imagens/iStock-588605048-1.jpg) no-repeat;
     background-size: 100%;
     width: 100%;
-    height: 920px;
+    height: 900px;
 }
 
 #sectionTransparent {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.236);
+    background-color: rgba(0, 0, 0, 0.536);
+    padding: 15px;
     width: 95%;
     margin: auto;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 #sectionTxt {
     color: white;
+    text-shadow: 1px 2px black;
     margin: auto;
     font-size: 1.5em;
     width: 50%;
@@ -167,16 +214,22 @@ header #navegação {
     padding: 30px;
 }
 
-#galery img {
+.row {
+    display: inline;
+    background-color: black;
     width: 30%;
+}
+
+#galery img {
+    width: 100%;
+    transition: all linear .4s;
 
 }
 
 #galery img:hover {
-    transition: .5s;
-    transform: scale(1.2);
+    transform: scale(1.1) ;
     cursor: pointer;
-    border: 1px dashed white;
+    filter: grayscale(100%);
 }
 
 footer {
