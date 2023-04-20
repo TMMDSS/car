@@ -166,6 +166,7 @@ header #navegação {
     background-size: 100%;
     width: 100%;
     height: 900px;
+    box-shadow: inset 0px 39px 100px 0px black;
 }
 
 #sectionTransparent {
