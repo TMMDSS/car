@@ -12,12 +12,25 @@
         top: 100px;
         right: 70px;
         height: 250%;
-        width: 35vw;
+        width: 100vw;
         padding: 1em;
         background-color: tomato;
         animation-duration: .5s;
         margin-top: -100vh;
        
+    }
+
+    #navegação a {
+        background-color: tomato;
+        padding: 0px;
+    }
+
+    #navegação a:hover {
+        background-color: black;
+        border-radius: 0px;
+        color: white;
+        text-decoration: none;
+        padding: 5px 15px 5px 15px;
     }
 }
 
