@@ -35,3 +35,28 @@ function animar() {
 }
 
 btn.addEventListener('click', animar) 
+
+/*AQUI COMEÇA O SCRIPT DA SIDEBAR*/
+
+let header = document.querySelector('#navegação')
+let showSideBar = false;
+
+function toggleSideBar() {
+    showSideBar = !showSideBar;
+    if (showSideBar) {
+        header.style.marginTop = '-5vh';
+        header.style.animationName = 'showSideBar';
+    } else {
+        header.style.marginTop = '-100vh';
+        header.style.animationName = '';
+    }
+}
+
+
+window.addEventListener('resize', function(event) {
+    if (window.innerWidth > 768 && showSideBar) {
+        showSideBar = true;
+        toggleSideBar();
+    }
+    }
+)

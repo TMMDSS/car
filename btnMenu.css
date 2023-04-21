@@ -1,7 +1,11 @@
 #btnMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
     width: 70px;
     height: 70px;
-    border: 2px solid #ccc;
+    border: 2px solid black;
     border-radius: 20px;
     background: transparent;
     cursor: pointer;
@@ -10,7 +14,7 @@
 .linha {
     width: 35px;
     height: 3px;
-    background-color: #ccc;
+    background-color: black;
     display: block;
     margin: 5px auto;
     position: relative;

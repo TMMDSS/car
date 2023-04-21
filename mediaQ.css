@@ -1,0 +1,31 @@
+@charset 'utf-8';
+@media screen and (max-width: 768px) {
+    #btnMenu {
+        display: block;
+       
+    }
+
+
+    #navegação {
+        position: absolute;
+        flex-direction: column;
+        top: 100px;
+        right: 70px;
+        height: 250%;
+        width: 35vw;
+        padding: 1em;
+        background-color: tomato;
+        animation-duration: .5s;
+        margin-top: -100vh;
+       
+    }
+}
+
+@keyframes showSideBar {
+    from {
+        margin-top: -100vh;
+    }
+    to {
+        margin-top: -10vh;
+    }
+}
