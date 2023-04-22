@@ -10,10 +10,27 @@ TABLET: 768PX ATÉ 992PX;
 DESKTOP: 992PX: ATE 1200PX;
 GRANNDES TELAS: ACIMA DE 1200PX;
 */
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 420px) {
     #btnMenu {
         display: block;
-       
+        position: absolute;
+        top: 0;
+        right: 180px;
+        min-width: 70px;
+        min-height: 70px;
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    
+    #mainHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 25px 0px 25px;
+        background-color: var(--cor-1);
+        height: 70px;
+        max-width: 320px;
     }
 
 
@@ -21,9 +38,9 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         position: absolute;
         flex-direction: column;
         top: 100px;
-        right: 70px;
+        right: 180px;
         height: 250%;
-        width: 100vw;
+        width: 320px;
         padding: 1em;
         background-color: tomato;
         animation-duration: .5s;
@@ -41,116 +58,156 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         border-radius: 0px;
         color: white;
         text-decoration: none;
-        padding: 5px 15px 5px 15px;
+        padding: NONE;
     }
 
-#bioFoto {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    background: linear-gradient(to top, var(--cor-2), var(--cor-0));
-    height: 500px;
-    width: 100%;
-    padding: 25px;
-}
+    #bioFoto {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        background: linear-gradient(to top, var(--cor-2), var(--cor-0));
+        height: 500px;
+        max-width: 320px;
+        padding: 25px;
+    }
 
-#bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    color: white;
-    height: 300px;
-    width: 250px;
-    text-align: center;
-}
-
-
-#foto img {
-    width: 320px;
-}
+    #bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        color: white;
+        height: 300px;
+        width: 250px;
+        text-align: center;
+    }
 
 
-#divBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--cor-0);
-    height: 90px;
-    width: 100%;
-}
-
-#divBtn #botaoSaibaMais {
-    background-color: rgba(99, 59, 7, 0.479);
-    color: var(--cor-1);
-    border: 2px solid var(--cor-1);
-    height: 50px;
-    width: 120px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-#divBtn #botaoSaibaMais:hover {
-    background-color: var(--cor-1);
-    color: black;
-}
+    #foto img {
+        width: 320px;
+    }
 
 
-#sobre {
-    display: flex;
-    align-items: center;
-    background: url(imagens/iStock-588605048-1.jpg) no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height: 900px;
-    box-shadow: inset 0px 39px 100px 0px black;
-}
+    #divBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cor-0);
+        height: 90px;
+        max-width: 320px;
+    }
 
-#sectionTransparent {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.536);
-    padding: 15px;
-    width: 95%;
-    margin: auto;
-    border-radius: 30px;
-}
+    #divBtn #botaoSaibaMais {
+        background-color: rgba(99, 59, 7, 0.479);
+        color: var(--cor-1);
+        border: 2px solid var(--cor-1);
+        height: 50px;
+        width: 120px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
 
-#sectionTxt {
-    color: white;
-    text-shadow: 1px 2px black;
-    margin: auto;
-    font-size: 1.5em;
-    width: 50%;
-    padding: 100px 0;
-    text-align: center;
-}
-
-#sectionTxt h2 {
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-#sectionImg  {
-    width: 50%;
-    margin: auto;
-}
-
-#sectionImg img {
-    width: 100%;
-}
-
-#subGalery {
-    display: flex;
-    align-items: center;
-    background: linear-gradient(to bottom, var(--cor-2), var(--cor-0));
-    background-size: cover;
-    width: 100%;
-    height: 720px;
+    #divBtn #botaoSaibaMais:hover {
+        background-color: var(--cor-1);
+        color: black;
+    }
 
 
-}
+    #sobre {
+        display: flex;
+        align-items: center;
+        background: brown;
+        background-size: 100%;
+        max-width: 320px;
+        height: 600px;
+        box-shadow: none;
+    }
+
+    #sectionTransparent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.536);
+        padding: 15px;
+        width: 95%;
+        height: 95%;
+        margin: auto;
+        border-radius: 0px;
+    }
+
+    #sectionTxt {
+        color: white;
+        text-shadow: 1px 2px black;
+        margin: auto;
+        font-size: 1em;
+        width: 100%;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    #sectionTxt h2 {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    #sectionImg  {
+        display: none;
+        width: 50%;
+        margin: auto;
+    }
+
+    #sectionImg img {
+        width: 100%;
+    }
+
+    #subGalery {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to bottom, var(--cor-2), var(--cor-0));
+        background-size: cover;
+        max-width: 320px;
+        height: 720px;
+
+
+    }
+    
+    #galery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px 20px;
+        background: rgba(0, 0, 0, 0.295);
+        width: 800px; /*QUE DIABO É ISSO*/
+        border-radius: 50px;
+        margin: auto;
+        padding: 30px;
+    }
+
+    .row {
+        display: inline;
+        background-color: black;
+        width: 30%;
+    }
+
+    #galery img {
+        width: 100%;
+        transition: all linear .4s;
+
+    }
+
+    #galery img:hover {
+        transform: scale(1.1) ;
+        cursor: pointer;
+        filter: grayscale(100%);
+    }
+
+    footer {
+        background-color: rgb(61, 59, 59);
+        height: 175px;
+        max-width: 320px;
+    }
 
 }
 
