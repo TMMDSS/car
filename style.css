@@ -24,11 +24,6 @@ header {
     top: 0;
 }
 
-main {
-
-}
-
-
 #mainHeader {
     display: flex;
     justify-content: space-between;
@@ -52,6 +47,11 @@ main {
     color: white;
     text-decoration: none;
     padding: 15px;
+}
+
+#navegação a:hover {
+    background-color: gray;
+    color: black;
 }
 
 
