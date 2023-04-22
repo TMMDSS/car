@@ -12,7 +12,7 @@
 }
 
 .linha {
-    width: 35px;
+    width: 50%;
     height: 3px;
     background-color: black;
     display: block;
