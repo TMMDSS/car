@@ -10,7 +10,7 @@ TABLET: 768PX ATÉ 992PX;
 DESKTOP: 992PX: ATE 1200PX;
 GRANNDES TELAS: ACIMA DE 1200PX;
 */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
 
     header {
         display: flex;
@@ -19,10 +19,8 @@ GRANNDES TELAS: ACIMA DE 1200PX;
     }
     #btnMenu {
         display: block;
-        min-width: 70px;
-        min-height: 70px;
-        max-width: 30px;
-        max-height: 30px;
+        max-width: 50px;
+        max-height: 50px;
     }
 
     
