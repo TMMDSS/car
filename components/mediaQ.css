@@ -65,11 +65,10 @@ GRANNDES TELAS: ACIMA DE 1200PX;
     #bioFoto {
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
         background: linear-gradient(to top, var(--cor-2), var(--cor-0));
-        height: 500px;
+        height: 600px;
         width: 100%;
-        padding: 25px;
+        padding: 0px;
     }
 
     #bio {
@@ -80,7 +79,7 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         gap: 20px;
         color: white;
         height: 300px;
-        width: 250px;
+        width: 100%;
         text-align: center;
     }
 
