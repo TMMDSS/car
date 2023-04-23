@@ -10,7 +10,7 @@ TABLET: 768PX ATÉ 992PX;
 DESKTOP: 992PX: ATE 1200PX;
 GRANNDES TELAS: ACIMA DE 1200PX;
 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
 
     header {
         display: flex;
@@ -39,10 +39,9 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         position: absolute;
         flex-direction: column;
         top: 100px;
-        right: 180px;
-        height: 250%;
-        width: 320px;
-        padding: 1em;
+        left: 0;
+        gap: 0px;
+        width: 100%;
         background-color: tomato;
         animation-duration: .5s;
         margin-top: -100vh;
@@ -51,7 +50,8 @@ GRANNDES TELAS: ACIMA DE 1200PX;
 
     #navegação a {
         background-color: tomato;
-        padding: 0px;
+        padding: 10px;
+        border-bottom: 1px solid white;
     }
 
     #navegação a:hover {
@@ -59,7 +59,7 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         border-radius: 0px;
         color: white;
         text-decoration: none;
-        padding: NONE;
+        padding: 20px;
     }
 
     #bioFoto {
@@ -226,6 +226,38 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         height: 300px;
         width: 100%;
         text-align: center;
+    }
+
+    #btnMenu {
+        display: block;
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    #navegação {
+        position: absolute;
+        flex-direction: column;
+        top: 100px;
+        left: 0;
+        gap: 0px;
+        width: 100%;
+        background-color: tomato;
+        animation-duration: .5s;
+        margin-top: -100vh;
+       
+    }
+
+    #navegação a {
+        background-color: tomato;
+        padding: 10px;
+    }
+
+    #navegação a:hover {
+        background-color: black;
+        border-radius: 0px;
+        color: white;
+        text-decoration: none;
+        padding: 20px;
     }
 
     #sobre {
