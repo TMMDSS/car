@@ -31,7 +31,7 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         padding: 0px 25px 0px 25px;
         background-color: var(--cor-1);
         height: 70px;
-        max-width: 320px;
+        width: 100%;
     }
 
 
@@ -68,7 +68,7 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         justify-content: space-between;
         background: linear-gradient(to top, var(--cor-2), var(--cor-0));
         height: 500px;
-        max-width: 320px;
+        width: 100%;
         padding: 25px;
     }
 
@@ -96,7 +96,7 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         justify-content: center;
         background-color: var(--cor-0);
         height: 90px;
-        max-width: 320px;
+        width: 100%;
     }
 
     #divBtn #botaoSaibaMais {
@@ -120,7 +120,7 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         align-items: center;
         background: brown;
         background-size: 100%;
-        max-width: 320px;
+        width: 100%;
         height: 600px;
         box-shadow: none;
     }
@@ -147,11 +147,6 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         text-align: center;
     }
 
-    #sectionTxt h2 {
-        text-align: left;
-        margin-bottom: 15px;
-    }
-
     #sectionImg  {
         display: none;
         width: 50%;
@@ -167,7 +162,7 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         align-items: center;
         background: linear-gradient(to bottom, var(--cor-2), var(--cor-0));
         background-size: cover;
-        max-width: 320px;
+        width: 100%;
         height: 720px;
 
 
@@ -207,7 +202,7 @@ GRANNDES TELAS: ACIMA DE 1200PX;
     footer {
         background-color: rgb(61, 59, 59);
         height: 175px;
-        max-width: 320px;
+        width: 100%;
     }
 
 }
