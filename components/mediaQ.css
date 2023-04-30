@@ -45,7 +45,7 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         background-color: tomato;
         animation-duration: .5s;
         margin-top: -100vh;
-       
+        z-index: -1;
     }
 
     #navegação a {
@@ -265,7 +265,7 @@ GRANNDES TELAS: ACIMA DE 1200PX;
         background-color: tomato;
         animation: ease-in .5s;
         margin-top: -100vh;
-        
+        z-index: -1;
     }
 
     #navegação a {
